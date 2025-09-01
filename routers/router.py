@@ -29,3 +29,12 @@ async def update_task(title:str,completed:bool):
     if result.modified_count:
         return {"message":"Task updated successfully"}
     return {"message":"Taks not found"}
+
+@MyRuter.delete("/detete_task/{title}")
+async def delete_tasks(title:str):
+    result = tasks_collection.delete_one(
+        {"title":title}
+    )
+    if result.deleted_count:
+         return {"message":"Task deleted successfully"}
+    return {"message":"Taks not found"}    
