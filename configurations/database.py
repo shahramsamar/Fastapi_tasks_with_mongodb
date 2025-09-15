@@ -2,7 +2,7 @@ from pymongo.mongo_client import MongoClient
 from pymongo.server_api import ServerApi
 
 
-uri ="mongodb://localhost:27017/?directConnection=true"
+uri = "mongodb://localhost:27017/?directConnection=true"
 
 clinet = MongoClient(uri,server_api=ServerApi("1"))
 
