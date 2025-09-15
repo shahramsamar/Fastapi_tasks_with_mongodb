@@ -16,12 +16,13 @@ A clean, fast, and scalable backend starter built with [FastAPI](https://fastapi
 ## 📁 Project Structure
 
 - fastapi-with-mongo-db/
-- │ ├── app/ 
+- │ ├── app/
+- │ ├── configurations/  # Data Base
 - │ ├── models/  # Data models 
 - │ ├── routes/  # API routes
 - │└── main.py   # Entry point
 - │ ├── requirements.txt # Dependencies 
-- └── README.md 
+- └── README.md  
 
 ---
 
